@@ -6,5 +6,5 @@ def test_column_names():
     assert set(df.columns) == expected
 
 def test_no_missing_values():
-    df = pd.read_csv("data/iris.csv")
+    df = pd.read_csv("data/data_iris.csv")
     assert df.isnull().sum().sum() == 0
